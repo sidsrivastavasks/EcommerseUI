@@ -1,3 +1,4 @@
+import 'package:ecommerse/screens/const.dart';
 import 'package:flutter/material.dart';
 
 class SearchBar extends StatefulWidget {
@@ -14,7 +15,11 @@ class _SearchBarState extends State<SearchBar> {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 400),
-      width: _folded ? 56 : 300,
+      width: _folded
+          ? 56
+          : owner
+              ? 150
+              : 300,
       height: 56,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(32),
@@ -30,6 +35,13 @@ class _SearchBarState extends State<SearchBar> {
                   ? TextField(
                       decoration: InputDecoration(
                           hintText: 'Search',
+                          suffixIcon: !owner
+                              ? Icon(
+                                  Icons.mic,
+                                  color: Colors.black38,
+                                )
+                              : null,
+                          prefixIcon: !owner ? Icon(Icons.search) : null,
                           hintStyle: TextStyle(
                             color: Colors.blue[300],
                           ),
