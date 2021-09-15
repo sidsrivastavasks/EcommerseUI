@@ -1,6 +1,6 @@
 {
-    "name": "ecommerse",
-    "short_name": "ecommerse",
+    "name": "ecommerce",
+    "short_name": "ecommerce",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

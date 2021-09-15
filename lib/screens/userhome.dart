@@ -1,4 +1,4 @@
-import 'package:ecommerse/screens/searchBar.dart';
+import 'package:ecommerce/screens/searchBar.dart';
 import 'package:flutter/material.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 

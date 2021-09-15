@@ -1,4 +1,4 @@
-import 'package:ecommerse/screens/const.dart';
+import 'package:ecommerce/screens/const.dart';
 import 'package:flutter/material.dart';
 
 class SearchBar extends StatefulWidget {

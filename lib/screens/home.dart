@@ -1,4 +1,4 @@
-import 'package:ecommerse/utils/routes.dart';
+import 'package:ecommerce/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 import 'const.dart';

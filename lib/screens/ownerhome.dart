@@ -1,5 +1,5 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
-import 'package:ecommerse/screens/searchBar.dart';
+import 'package:ecommerce/screens/searchBar.dart';
 import 'package:flutter/material.dart';
 
 class OwnerHome extends StatefulWidget {
