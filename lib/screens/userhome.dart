@@ -1,8 +1,6 @@
 import 'package:ecommerse/screens/searchBar.dart';
 import 'package:flutter/material.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
-import 'package:footer/footer.dart';
-import 'package:footer/footer_view.dart';
 
 class UserHome extends StatefulWidget {
   @override
@@ -44,11 +42,8 @@ class _UserHomeState extends State<UserHome> {
                     ),
                   ),
                   height: 150,
-                  child: Center(
-                    child: Image.network(
-                        "https://media.istockphoto.com/vectors/fruits-and-vegetables-seller-man-character-vector-id639994740?k=20&m=639994740&s=612x612&w=0&h=jQLtTr-IfjYM_z3iZycR5_bBum8ZnNEMwi1bUbkdKL4=",
-                        fit: BoxFit.cover),
-                  ),
+                  child: Image.asset("assets/images/first_image.jpg",
+                      fit: BoxFit.cover),
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -123,11 +118,8 @@ class _UserHomeState extends State<UserHome> {
                       ),
                     ),
                     height: 150,
-                    child: Center(
-                      child: Image.network(
-                          "https://images.all-free-download.com/images/graphicthumb/shopping_banner_clerk_goods_decor_icons_6834131.jpg",
-                          fit: BoxFit.cover),
-                    ),
+                    child: Image.asset("assets/images/second_image.jpg",
+                        fit: BoxFit.cover),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -194,18 +186,15 @@ class _UserHomeState extends State<UserHome> {
               child: Column(
                 children: [
                   Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        ),
                       ),
-                    ),
-                    height: 150,
-                    child: Center(
-                        child: Image.network(
-                            "https://image.freepik.com/free-vector/people-shopping-groceries_23-2148511578.jpg",
-                            fit: BoxFit.cover)),
-                  ),
+                      height: 150,
+                      child: Image.asset("assets/images/third_image.jpg",
+                          fit: BoxFit.cover)),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -259,18 +248,18 @@ class _UserHomeState extends State<UserHome> {
         Padding(
           padding: const EdgeInsets.all(20.0),
           child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(20),
-                  topRight: Radius.circular(20),
-                  topLeft: Radius.circular(20),
-                  bottomLeft: Radius.circular(20),
-                ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(20),
+                topRight: Radius.circular(20),
+                topLeft: Radius.circular(20),
+                bottomLeft: Radius.circular(20),
               ),
-              elevation: 10.0,
-              child: Column(
-                children: [
-                  Container(
+            ),
+            elevation: 10.0,
+            child: Column(
+              children: [
+                Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
@@ -278,61 +267,63 @@ class _UserHomeState extends State<UserHome> {
                       ),
                     ),
                     height: 150,
-                    child: Center(
-                        child: Image.network(
-                            "https://img.freepik.com/free-vector/coronavirus-supermarket-illustration-style_23-2148508131.jpg?size=626&ext=jpg",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/fourth_image.jpg",
+                        fit: BoxFit.cover)),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(20),
+                      bottomRight: Radius.circular(20),
+                    ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(20),
-                        bottomRight: Radius.circular(20),
+                  height: 50,
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            "Reliance Mart",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                color: Colors.yellow,
+                              ),
+                              Text("4.8/5"),
+                            ],
+                          ),
+                        ],
                       ),
-                    ),
-                    height: 50,
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Text(
-                              "Reliance Mart",
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.star,
-                                  color: Colors.yellow,
-                                ),
-                                Text("4.8/5"),
-                              ],
-                            ),
-                          ],
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              width: 35,
-                            ),
-                            Text("Snacks, Beverages..."),
-                            SizedBox(
-                              width: 40,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            width: 35,
+                          ),
+                          Text("Snacks, Beverages..."),
+                          SizedBox(
+                            width: 40,
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                ],
-              )),
+                ),
+              ],
+            ),
+          ),
         ),
+        SizedBox(
+          height: 10,
+        ),
+        Center(child: Text("Copyright © 2021 Siddhant Srivastava ")),
       ],
     ),
     Container(color: Colors.red),
@@ -398,6 +389,9 @@ class _UserHomeState extends State<UserHome> {
               ),
             ],
           ),
+          // persistentFooterButtons: [
+          //   Text("Copyright © 2021 Siddhant Srivastava       "),
+          // ],
         ),
       ),
     );

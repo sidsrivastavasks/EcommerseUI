@@ -63,8 +63,11 @@ class _LogInState extends State<LogIn> {
                         ),
                         style: ElevatedButton.styleFrom(
                             primary: Colors.purple,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(22.0),
+                            ),
                             padding: EdgeInsets.symmetric(
-                                horizontal: 20, vertical: 10),
+                                horizontal: 90, vertical: 9),
                             textStyle: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold)),
                       ),
@@ -94,8 +97,8 @@ class _LogInState extends State<LogIn> {
                         },
                         child: AnimatedContainer(
                           duration: Duration(seconds: 1),
-                          width: changeButton ? 50 : 130.0,
-                          height: 50.0,
+                          width: changeButton ? 50 : 260.0,
+                          height: 43.0,
                           alignment: Alignment.center,
                           child: changeButton
                               ? Icon(
@@ -112,7 +115,7 @@ class _LogInState extends State<LogIn> {
                                 ),
                           decoration: BoxDecoration(
                             borderRadius:
-                                BorderRadius.circular(changeButton ? 50 : 8),
+                                BorderRadius.circular(changeButton ? 60 : 22),
                             color: Colors.purple,
                           ),
                         ),
@@ -123,6 +126,9 @@ class _LogInState extends State<LogIn> {
               ),
             ],
           ),
+          persistentFooterButtons: [
+            Text("Copyright © 2021 Siddhant Srivastava       "),
+          ],
         ),
       ),
     );

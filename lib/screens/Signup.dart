@@ -79,8 +79,11 @@ class SignUp extends StatelessWidget {
                       ),
                       style: ElevatedButton.styleFrom(
                         primary: Colors.purple,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(22.0),
+                        ),
                         padding:
-                            EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                            EdgeInsets.symmetric(horizontal: 90, vertical: 9),
                         textStyle: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       ),
@@ -90,6 +93,9 @@ class SignUp extends StatelessWidget {
               ),
             ),
           ),
+          persistentFooterButtons: [
+            Text("Copyright © 2021 Siddhant Srivastava       "),
+          ],
         ),
       ),
     );

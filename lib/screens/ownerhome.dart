@@ -41,10 +41,7 @@ class _OwnerHomeState extends State<OwnerHome> {
                       ),
                     ),
                     height: 140,
-                    child: Center(
-                        child: Image.network(
-                            "https://media.istockphoto.com/vectors/fruits-and-berries-healthy-food-flat-style-vector-illustration-vector-id866764352?k=20&m=866764352&s=612x612&w=0&h=-f9rYADGgHI8M5JsQG71igMb0r4wIkWH3RSuYCNeFGg=",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/owner_image.jpg"),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -79,10 +76,7 @@ class _OwnerHomeState extends State<OwnerHome> {
                       ),
                     ),
                     height: 140,
-                    child: Center(
-                        child: Image.network(
-                            "https://media.istockphoto.com/vectors/fruits-and-berries-healthy-food-flat-style-vector-illustration-vector-id866764352?k=20&m=866764352&s=612x612&w=0&h=-f9rYADGgHI8M5JsQG71igMb0r4wIkWH3RSuYCNeFGg=",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/owner_image.jpg"),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -125,10 +119,7 @@ class _OwnerHomeState extends State<OwnerHome> {
                       ),
                     ),
                     height: 140,
-                    child: Center(
-                        child: Image.network(
-                            "https://media.istockphoto.com/vectors/fruits-and-berries-healthy-food-flat-style-vector-illustration-vector-id866764352?k=20&m=866764352&s=612x612&w=0&h=-f9rYADGgHI8M5JsQG71igMb0r4wIkWH3RSuYCNeFGg=",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/owner_image.jpg"),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -163,10 +154,7 @@ class _OwnerHomeState extends State<OwnerHome> {
                       ),
                     ),
                     height: 140,
-                    child: Center(
-                        child: Image.network(
-                            "https://media.istockphoto.com/vectors/fruits-and-berries-healthy-food-flat-style-vector-illustration-vector-id866764352?k=20&m=866764352&s=612x612&w=0&h=-f9rYADGgHI8M5JsQG71igMb0r4wIkWH3RSuYCNeFGg=",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/owner_image.jpg"),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -209,10 +197,7 @@ class _OwnerHomeState extends State<OwnerHome> {
                       ),
                     ),
                     height: 140,
-                    child: Center(
-                        child: Image.network(
-                            "https://media.istockphoto.com/vectors/fruits-and-berries-healthy-food-flat-style-vector-illustration-vector-id866764352?k=20&m=866764352&s=612x612&w=0&h=-f9rYADGgHI8M5JsQG71igMb0r4wIkWH3RSuYCNeFGg=",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/owner_image.jpg"),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -247,10 +232,7 @@ class _OwnerHomeState extends State<OwnerHome> {
                       ),
                     ),
                     height: 140,
-                    child: Center(
-                        child: Image.network(
-                            "https://media.istockphoto.com/vectors/fruits-and-berries-healthy-food-flat-style-vector-illustration-vector-id866764352?k=20&m=866764352&s=612x612&w=0&h=-f9rYADGgHI8M5JsQG71igMb0r4wIkWH3RSuYCNeFGg=",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/owner_image.jpg"),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -293,10 +275,7 @@ class _OwnerHomeState extends State<OwnerHome> {
                       ),
                     ),
                     height: 140,
-                    child: Center(
-                        child: Image.network(
-                            "https://media.istockphoto.com/vectors/fruits-and-berries-healthy-food-flat-style-vector-illustration-vector-id866764352?k=20&m=866764352&s=612x612&w=0&h=-f9rYADGgHI8M5JsQG71igMb0r4wIkWH3RSuYCNeFGg=",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/owner_image.jpg"),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -331,10 +310,7 @@ class _OwnerHomeState extends State<OwnerHome> {
                       ),
                     ),
                     height: 140,
-                    child: Center(
-                        child: Image.network(
-                            "https://media.istockphoto.com/vectors/fruits-and-berries-healthy-food-flat-style-vector-illustration-vector-id866764352?k=20&m=866764352&s=612x612&w=0&h=-f9rYADGgHI8M5JsQG71igMb0r4wIkWH3RSuYCNeFGg=",
-                            fit: BoxFit.contain)),
+                    child: Image.asset("assets/images/owner_image.jpg"),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -359,6 +335,10 @@ class _OwnerHomeState extends State<OwnerHome> {
             ),
           ],
         ),
+        SizedBox(
+          height: 10,
+        ),
+        Center(child: Text("Copyright © 2021 Siddhant Srivastava")),
       ],
     ),
     Container(color: Colors.orange),
@@ -431,6 +411,9 @@ class _OwnerHomeState extends State<OwnerHome> {
               ),
             ],
           ),
+          // persistentFooterButtons: [
+          //   Text("Copyright © 2021 Siddhant Srivastava       "),
+          // ],
         ),
       ),
     );
